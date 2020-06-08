@@ -6,9 +6,7 @@ const routes = [
     path:"/",
     component:()=> import("../views/index/index")
   },
-  {
-
-  }
+  
 ];
 const mode = "history";
 const router = new VueRouter({

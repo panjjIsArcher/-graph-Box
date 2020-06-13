@@ -1,18 +1,28 @@
 <template>
-  <div>
     <!-- 左边的弹窗 -->
-    <Slider/>
-    <div>
-      
+    <div class="index">
+      <div class="slider">
+        <Slider style="width:100%;"/>
+      </div> 
+      <div class="view">
+        <router-view />
+      </div>
     </div>
-  </div>
 </template>
 <script>
-import Slider from "@/components/slider";
 export default {
-  components:{ Slider }
+  
 }
 </script>
 <style lang="less" scoped>
-
+.index{
+    display: flex;
+    justify-content: space-around;
+    .slider{
+      flex-grow:1
+    }
+    .view{
+      flex-grow:4
+    }
+}
 </style>

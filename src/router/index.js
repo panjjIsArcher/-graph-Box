@@ -4,7 +4,21 @@ Vue.use(VueRouter)
 const routes = [
   {
     path:"/",
-    component:()=> import("../views/index/index")
+    component:()=> import("../views/index/index"),
+    name:"index",
+    redirect:"transform",
+    children:[
+      {
+        path:"/transform",
+        component:()=>import("@/views/transform/transform"),
+        name:"transform"
+      },
+      {
+        path:"/button",
+        component:()=> import("@/views/button/button"),
+        name:"button"
+      }
+    ]
   },
   
 ];

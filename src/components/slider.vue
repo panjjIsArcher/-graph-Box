@@ -21,9 +21,9 @@ export default {
  @slider-title-bg-color:"rgb(25 ,25 ,112)";
 .slider{
   height: 100%;
-  width:20%;
+  width: 20%;
   
-  background-color: rgb(25 ,25 ,112);
+  background-color:@slider-title-bg-color;
   color:#fff;
   .title{
     h3{
